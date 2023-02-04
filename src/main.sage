@@ -10,6 +10,11 @@ E = EllipticCurve(GF(p), [a, b])
 R = E.random_element()
 P = E.random_element()
 
+print('> mod =', p)
+print('> a =', a)
+print('> b =', b)
+print(f'> R = ({R[0]}, {R[1]})', )
+
 def XennyOracle(t):
     O = P + t*R
     return int(O[0]) - getPrime(163)
