@@ -17,7 +17,7 @@ print(f'> R = ({R[0]}, {R[1]})', )
 
 def XennyOracle(t):
     O = P + t*R
-    return int(O[0]) - getPrime(163)
+    print(int(O[0]) - getPrime(163)) 
 
 
 def task():
